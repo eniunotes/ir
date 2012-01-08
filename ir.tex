@@ -1,1 +1,65 @@
-1
+\documentclass[•]{article}
+\usepackage{indentfirst}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[dvipdfm]{hyperref} 
+\usepackage{enumerate}
+
+
+
+\begin{document}
+
+\section{core issue}
+At a high-level, there are three major core IR topics:\cite{CS598CXZreadings}
+
+\begin{itemize}
+\item Evaluation
+\item Retrieval Models
+\item Efficiency and Scalability. 
+\end{itemize}
+
+
+
+These topics are selected for two reasons: 
+
+First, they represent the most important core topics in IR and are at the foundation of the modern search engines (i.e., ad hoc retrieval technologies). While IR research has made many contributions in other topics such as text categorization, clustering, summarization, and information filtering, research on these other topics tend to overlap a lot with research in other fields, especially machine learning, natural language processing, and data mining. In contrast, the selected core topics better represent unique contributions made by IR researchers. 
+
+Second, while these topics are still active research topics today, research on these topics has now reached a "mature" state in that the research results on these topics so far likely will still represent the state of the art in the near future. In contrast, other important topics such as personalized search, query intent analysis, user interface, and various IR applications have not yet resulted in "stable" technologies, thus knowledge on these topics likely will become out of date soon. Your general goal in reading these materials should be to understand precisely the major techniques and research results, so that you can have a solid knowledge background on these core IR topics.
+
+\section{relevance feedback}
+
+\subsection{todo}
+see \cite{Lv2011} for RF methods for prob models(see subsection "relation with RM")
+
+\subsection{formulation of the problem}
+automatic refinement of query:
+
+\begin{itemize}
+\item global --- q expansion, etc.
+\item local --- rf, etc.
+\end{itemize}
+
+\subsection{relation with RM}
+\cite{Lv2011}
+\begin{itemize}
+\item for vsm:
+rocchio
+\item for prob model(lm, etc):
+select expansion terms primaily based on RSJ weight. (global method?)
+\end{itemize}
+\subsection{ref}
+ItoIR(Cambridge) Chap9
+
+\cite{Lv2011}, \cite{Zhai2001}
+
+Zhai's courseware(\cite{CS598CXZreadings}, etc.)
+
+Zhai's book
+
+
+\section{ref}
+
+
+\bibliographystyle{plain}
+\bibliography{library}
+
+\end{document}
