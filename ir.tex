@@ -32,10 +32,43 @@ Second, while these topics are still active research topics today, research on t
 
 \subsection{frontier topics}
 
-\section{relevance feedback}
+
+\section{RetMod}
+todo: chapter 4 of \cite{Ponte1998}!
+
+\subsection{prob}
+\subsubsection{regression model and learning to rank}
+
+\subsubsection{doc gen(1976)}
+
+\subsubsection{query gen(1998 \cite{Ponte1998} \cite{Ponte1998a} i.e. langmod)}
+***chapter 4 of \cite{Ponte1998} must read!
+
+does not specify how weight of term is calculated
+
+diff with Salton's VSM: q and d are not same, they are fundamentally diff (see p92 of \cite{Ponte1998a})
+
+ref: \cite{Ponte1998} and \cite{Ponte1998a}
+
+\section{Q refinement}
 
 \subsection{todo}
+citing chain: \cite{Lv2011} -- [31]-- $>$ \cite{Zhai2001} --[10]--$>$ \cite{Ponte1998}
+
+what is pseudo feedback?
+
 see \cite{Lv2011} for RF methods for prob models(see subsection "relation with RM")
+
+\subsection{essence}
+guess user's intent? 
+
+\subsection{aim}
+*** to improve result of direct retrieval(i.e. search for one time)
+
+so we can choose to refine the query
+
+\subsection{relation with the whole retrieval approach}
+see section 3 of \cite{Zhai2001}: the relation of method of using KL divergence to compute relevance value and the whole retrieval approach
 
 \subsection{formulation of the problem}
 \subsubsection{background}
@@ -48,18 +81,35 @@ how to solve it:
 \begin{itemize}
 \item user manually refine it
 \item se help user to refine it
+\subitem unsupervised: with feed back
+\subitem supervised: without
 \subitem global --- q expansion, etc.
 \subitem local --- rf, etc.
 \end{itemize}
 
+
+\subsection{method A: refine manually(e.g. structured query---q op etc.??)}
+
+\subsection{method B: se help user to refine it}
+
+\subsubsection{supervised: with feedback}
+
+
+\subsubsection{unsupervised: without feedback}
+\begin{itemize}
+\item global
+\item local see \$5.3 of \cite{Ponte1998}
+\subitem LCA
+\subitem local feedback(pseudo feedback?)
+\end{itemize}
 
 \subsection{relation with RM}
 \cite{Lv2011}
 \begin{itemize}
 \item for vsm:
 rocchio
-\item for prob model(lm, etc):
-select expansion terms primaily based on RSJ weight. (global method?)
+\item for prob model(lm, etc): select expansion terms primaily based on RSJ weight. (global method?)
+\subitem for lm: KL divergence
 \end{itemize}
 \subsection{ref}
 ItoIR(Cambridge) Chap9
@@ -77,7 +127,10 @@ general problem:
 
 how to enable human to better utilize the machine specialized for searching(e.g. search engine)
 
+\subsection{\cite{Zhai2001}}
 
+\subsection{\cite{Ponte1998} and \cite{Ponte1998a}}
+question: as it is early paper, make sure of what affect it makes on the following research!
 
 \section{ref}
 
